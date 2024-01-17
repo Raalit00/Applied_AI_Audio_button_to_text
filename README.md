@@ -3,6 +3,8 @@
 
 In diesem Projekt wird Künstliche Intelligenz eingesetzt, um anhand des Klangs eines Tastendrucks auf einer Tastatur zu bestimmen, welche spezifische Taste gedrückt wurde. Unter Verwendung von TensorFlow-Keras für das Deep Learning-Training und der benutzerfreundlichen Plattform Teachable Machine zur Vereinfachung dieses Prozesses zielt das Projekt darauf ab, ein hochentwickeltes neuronales Netzwerkmodell zu schaffen. Dieses Modell soll in der Lage sein, feine Unterschiede im Klangprofil verschiedener Tasten, wie beispielsweise "1", "2" oder "Enter", präzise zu identifizieren und zu differenzieren.
 
+Zusäzlich ist es möglich die Detektion von Tastur Bereichen zu detektieren, beispielsweise Zahlenbereich, linke hälfte, rechte hälfte.
+
 
 ## Data/Recording:
 Als datengrundlage wird eine Python Anwednung geschrieben, welche die die Tastenschläge aufzeichnet und gleichzeitig mit einem Label versieht.
