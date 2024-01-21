@@ -5,14 +5,14 @@ import threading
 import soundfile as sf
 import datetime
 from pynput import keyboard
+import time
 
 # Globale Variablen
 SAMPLING_RATE = 44100
-BUFFER_DURATION = 0.6  # 0.1 Sekunden vor und 1 Sekunde nach dem Drücken
+BUFFER_DURATION = 0.5
 buffer_size = int(BUFFER_DURATION * SAMPLING_RATE)
 audio_buffer = np.zeros((buffer_size, 2), dtype=np.float32)
 audio_queue = queue.Queue()
-
 # Funktion, um kontinuierlich Audio aufzunehmen
 def audio_callback(indata, frames, time, status):
     global audio_buffer
@@ -30,23 +30,30 @@ def save_audio():
         if item is None:
             break  # Beenden, wenn None als Signal zum Beenden empfangen wird
         audio_data, key_name = item
-        filename = f"./Data/{key_name}_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.wav"
+        filename = f"./Data/lernwelt/{key_name}_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.wav"
         sf.write(filename, audio_data, SAMPLING_RATE)
         print(f"Audio saved as {filename}")
 
 # Funktion, um auf Tastendruck zu reagieren
+
+
 def on_press(key):
     try:
-        key_name = key.char  # Versuche, das Zeichen der Taste zu erhalten
+        key_name = key.char
     except AttributeError:
-        key_name = key.name  # Wenn es kein Zeichen gibt, verwende den Namen der Taste
+        key_name = key.name
+    pre_press_buffer = np.copy(audio_buffer)
+    time.sleep(0.5)
 
-    current_buffer = np.copy(audio_buffer)a
-    audio_queue.put((current_buffer, key_name))
+    post_press_buffer = np.copy(audio_buffer)
+
+    # Kombinieren Sie die vorherigen und nachfolgenden Pufferabschnitte
+    combined_buffer = np.concatenate((pre_press_buffer, post_press_buffer), axis=0)
+    audio_queue.put((combined_buffer, key_name))
 
     if key == keyboard.Key.esc:
-        # Beenden, wenn die Escape-Taste gedrückt wird
         return False
+
 
 # Listener für Tastatureingaben
 listener = keyboard.Listener(on_press=on_press)

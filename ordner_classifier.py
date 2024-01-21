@@ -6,12 +6,16 @@ def create_directory(directory_path):
         os.makedirs(directory_path)
 
 def main():
-    classes = os.listdir("./Data")
+    source_path = "./Data/lernwelt/"
+    target_path = "./classes_lw/"
+    classes = os.listdir(source_path)
     for file in classes:
+        taste = file.split("_")[0]
+        print(taste)
         if file.endswith("wav"):
-            create_directory("./classes/" + file[:1])
-            if not os.path.exists("./classes/" + file):
-                shutil.copy("./Data/" + file, "./classes/" + file[:1] + "/" + file)
+            create_directory(target_path + taste)
+            if not os.path.exists(target_path + file):
+                shutil.copy(source_path + file, target_path + taste + "/" + file)
 
 if __name__ == "__main__":
     main()
