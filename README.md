@@ -30,4 +30,4 @@ Die Datenerfassung erfolgt durch eine Python-Anwendung, die Tastenanschläge auf
 
 ## Auswertung
 
-Verschiedene Modelle wurden eingesetzt, um das optimale neuronale Netzwerkmodell für die präzise Erkennung von Tastaturanschlägen zu identifizieren. Zur Überwachung und Analyse des Trainingsfortschritts sowie der Leistung der Modelle wurden die Entwicklertools von Weights & Biases verwendet. Diese Plattform ermöglichte den effektiven Vergleich der Leistung verschiedener Modelle, wodurch das leistungsfähigste Modell für unsere Anwendung ausgewählt werden konnte.
+Verschiedene Modelle wurden eingesetzt, um das optimale neuronale Netzwerkmodell für die präzise Erkennung von Tastaturanschlägen zu identifizieren. Zur Überwachung und Analyse des Trainingsfortschritts sowie der Leistung der Modelle wurden die Entwicklertools von [Weights & Biases](https://wandb.ai/site) verwendet. Diese Plattform ermöglichte den effektiven Vergleich der Leistung verschiedener Modelle, wodurch das leistungsfähigste Modell für unsere Anwendung ausgewählt werden konnte.
