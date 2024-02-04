@@ -20,8 +20,10 @@ Die Datenerfassung erfolgt durch eine Python-Anwendung, die Tastenanschläge auf
 
 ```.
 ├── README.md
-├── audio_recording.py         # Skript für die Audioaufnahme
 ├── model/                     # Ordner für das exportierte KI-Modell
+├── src/                       # Skript für die Audioaufnahme
+|    ├── order_classifier.py
+|    └── recorder.py
 └── data/                      # Gesammelte Audiodaten
     ├── Taste1/
     ├── Taste2/
