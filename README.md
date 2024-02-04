@@ -1,15 +1,15 @@
-# Applied_AI_Audio_button_to_text / KI-gesteuerte Erkennung von Tastendrücken
+# KI-gesteuerte Erkennung von Tastaturanschlägen
 ## Überblick
 
-In diesem Projekt wird Künstliche Intelligenz eingesetzt, um anhand des Klangs eines Tastendrucks auf einer Tastatur zu bestimmen, welche spezifische Taste gedrückt wurde. Unter Verwendung von TensorFlow-Keras für das Deep Learning-Training und der benutzerfreundlichen Plattform Teachable Machine zur Vereinfachung dieses Prozesses zielt das Projekt darauf ab, ein hochentwickeltes neuronales Netzwerkmodell zu schaffen. Dieses Modell soll in der Lage sein, feine Unterschiede im Klangprofil verschiedener Tasten, wie beispielsweise "1", "2" oder "Enter", präzise zu identifizieren und zu differenzieren.
+In diesem Projekt nutzen wir Künstliche Intelligenz, um basierend auf dem Klangprofil eines Tastendrucks zu identifizieren, welche Taste auf einer Tastatur betätigt wurde. Durch den Einsatz von TensorFlow-Keras für das Training tiefer neuronaler Netzwerke und der benutzerfreundlichen Plattform Teachable Machine zur Vereinfachung des Trainingsprozesses, streben wir danach, ein fortschrittliches Modell zu entwickeln. Dieses Modell soll fähig sein, selbst feine klangliche Unterschiede zwischen verschiedenen Tasten, wie zum Beispiel "1", "2" oder "Enter", genau zu erkennen und zu unterscheiden.
 
-Zusäzlich ist es möglich die Detektion von Tastur Bereichen zu detektieren, beispielsweise Zahlenbereich, linke hälfte, rechte hälfte.
+(Optional) Darüber hinaus ermöglicht es das Projekt, Bereiche auf der Tastatur, wie den Zahlenblock oder die linke und rechte Tastaturhälfte, zu identifizieren.
 
+## Aufzeichnung
+Um eine hohe Datenqualität zu sichern, nutzen wir für die Aufzeichnung der Audio-Daten ein Samson Q2U Mikrofon. Die Aufzeichnungen erfolgen mittels einer Lenovo MT 81 TL Tastatur, wobei eine Abtastrate (SAMPLING_RATE) von 44100 Hz angewendet wird.
 
-## Data/Recording:
-Als datengrundlage wird eine Python Anwednung geschrieben, welche die die Tastenschläge aufzeichnet und gleichzeitig mit einem Label versieht.
-
-
+## Daten
+Die Datenerfassung erfolgt durch eine Python-Anwendung, die Tastenanschläge aufzeichnet und sofort mit einem Label versieht. Das Labeling erfolgt durch die Benennung der Dateien mit den Anfangsbuchstaben der jeweiligen Taste. Anschließend werden die Dateien mittels einer weiteren Funktion entsprechend ihres Labels in einer strukturierten Ordnerhierarchie abgelegt. Die aufgezeichneten Daten sind jeweils eine Sekunde lang und repräsentieren einzelne Tastenanschläge. Aufgrund des hohen Zeitaufwands der Datenaufzeichnung und der Vielzahl an Tasten auf einer Standardtastatur (circa 105) wäre für eine umfassende Datensammlung mit nur 200 Samples pro Taste ein Datenvolumen von etwa 21.000 Aufzeichnungen erforderlich. Ziel dieses Projekts war es daher, einen Proof of Concept zu liefern, wobei lediglich die Tasten '1', '6', 'Shift', 'Space' und 'Enter' für die Auswertung und Datenaufzeichnung berücksichtigt wurden. Um Overfitting entgegenzuwirken, wurden die Daten an verschiedenen Orten und unter variierenden Bedingungen aufgezeichnet, einschließlich unterschiedlicher Hintergrundgeräusche, Mikrofonpositionen, Tastendruckgeschwindigkeiten und Anschlagsdynamiken. Die Aufzeichnungen fanden sowohl in ruhigen Umgebungen als auch in geräuschintensiveren Bereichen statt.
 
 
 ``` .
