@@ -6,7 +6,7 @@ def create_directory(directory_path):
         os.makedirs(directory_path)
 
 def main():
-    source_path = "./Data/lernwelt/"
+    source_path = "./Data/flur_hdm/"
     target_path = "./classes_lw/"
     classes = os.listdir(source_path)
     for file in classes:

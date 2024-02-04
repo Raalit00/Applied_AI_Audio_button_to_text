@@ -30,7 +30,7 @@ def save_audio():
         if item is None:
             break  # Beenden, wenn None als Signal zum Beenden empfangen wird
         audio_data, key_name = item
-        filename = f"./Data/lernwelt/{key_name}_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.wav"
+        filename = f"./Data/flur_hdm/{key_name}_{datetime.datetime.now().strftime('%Y-%m-%d_%H-%M-%S')}.wav"
         sf.write(filename, audio_data, SAMPLING_RATE)
         print(f"Audio saved as {filename}")
 
