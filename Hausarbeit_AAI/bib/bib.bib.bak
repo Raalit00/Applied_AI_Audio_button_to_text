@@ -1,0 +1,67 @@
+﻿% Encoding: UTF-8
+﻿@misc{doc:stz,
+   author = "Thomas Nonnenmacher",
+   title = "LaTeX Grundlagen - Setzen einer wissenschaftlichen Arbeit
+Skript",
+	year = "2008",
+	url = "http://www.stz-softwaretechnik.de",
+	note = "(Bei STZ Internetseite unter Publikationen - Skripte) [V.\,2.0 26.02.08]"
+}
+
+@BOOK{doc:gun,
+	AUTHOR       = "Karsten Günther",
+	TITLE        = "LaTeX2 --- Das umfassende Handbuch",
+	PUBLISHER    = "Galileo Computing",
+	YEAR         = "2004",
+	url = "http://www.galileocomputing.de/katalog/buecher/titel/gp/titelID-768",
+	SERIES       = "1. Auflage",
+	VOLUME       = "",
+	ADDRESS      = "",
+	EDITION      = "",
+	MONTH        = "",
+	NOTE         = ""
+}
+
+@misc{doc:kml,
+   author = "esri",
+   title = "Was ist KML?",
+	year = "2021",
+	url = "https://desktop.arcgis.com/de/arcmap/10.3/manage-data/kml/what-is-kml-.htm",
+	note = "[Zugriff am :25.05.2021]"
+}
+
+
+@misc{doc:flask,
+   author = "pythonbasics",
+   title = "What is Flask?",
+	year = "2021",
+	url = "https://pythonbasics.org/what-is-flask-python/",
+	note = "[Zugriff am :04.08.2021]"
+}
+
+@misc{doc:st1,
+   author = "Thomas Nonnenmacher",
+   title = "LaTeX Grundlagen - Setzen einer wissenschaftlichen Arbeit
+Skript",
+	year = "2008",
+	url = "http://www.stz-softwaretechnik.de",
+	note = "(Bei STZ Internetseite unter Publikationen - Skripte) [V.\,2.0 26.02.08]"
+}
+
+@misc{rfc6749,
+        series =        {Request for Comments},
+        number =        6749,
+        howpublished =  {RFC 6749},
+        publisher =     {RFC Editor},
+        doi =           {10.17487/RFC6749},
+        url =           {https://rfc-editor.org/rfc/rfc6749.txt},
+        author =        {Dick Hardt},
+        title =         {{The OAuth 2.0 Authorization Framework}},
+        pagetotal =     76,
+        year =          2012,
+        month =         oct,
+        abstract =      {The OAuth 2.0 authorization framework enables a third-party application to obtain limited access to an HTTP service, either on behalf of a resource owner by orchestrating an approval interaction between the resource owner and the HTTP service, or by allowing the third-party application to obtain access on its own behalf. This specification replaces and obsoletes the OAuth 1.0 protocol described in RFC 5849. {[}STANDARDS-TRACK{]}},
+}
+
+
+@Comment{jabref-meta: databaseType:bibtex;}
