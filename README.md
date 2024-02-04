@@ -1,10 +1,14 @@
 # KI-gesteuerte Erkennung von Tastaturanschlägen
 
+## Motivation
+
+In einer Welt, in der Technologie und digitale Kommunikation immer mehr an Bedeutung gewinnen, wird die Möglichkeit, Tastenanschläge allein durch ihr Klangprofil zu identifizieren, als eine faszinierende technologische Errungenschaft betrachtet. Diese Fähigkeit birgt jedoch nicht nur innovative Anwendungsmöglichkeiten, sondern auch ernsthafte Sicherheitsrisiken. Insbesondere könnte eine Technologie zur akustischen Erkennung von Tastaturgeräuschen für Personen, die ihre Arbeit und Interaktionen häufig in digitalen Live-Streams oder in öffentlichen Räumen teilen, eine signifikante Bedrohung darstellen. Die potenzielle Gefahr, dass sensible Informationen – sei es durch Passwörter, private Nachrichten oder vertrauliche Daten – durch einfaches Abhören von Tastenanschlägen kompromittiert werden könnten, erfordert besondere Aufmerksamkeit.
+
+Die subtilen Unterschiede in den Klangprofilen verschiedener Tastaturen oder spezifischer Tastenanschläge bleiben für das menschliche Ohr oftmals ununterscheidbar, doch der Fortschritt in der künstlichen Intelligenz und in spezialisierten Algorithmen zur Klassifizierung ermöglicht die Realisierung einer solchen Technologie. Die Kombination aus leistungsfähigen, tiefen Lernmodellen und fortschrittlichen Techniken in Computer Vision und -audition eröffnet neue Wege für die präzise akustische Analyse und Interpretation.
+
 ## Überblick
 
-In diesem Projekt nutzen wir Künstliche Intelligenz, um basierend auf dem Klangprofil eines Tastendrucks zu identifizieren, welche Taste auf einer Tastatur betätigt wurde. Durch den Einsatz von TensorFlow-Keras für das Training tiefer neuronaler Netzwerke und der benutzerfreundlichen Plattform Teachable Machine zur Vereinfachung des Trainingsprozesses, streben wir danach, ein fortschrittliches Modell zu entwickeln. Dieses Modell soll fähig sein, selbst feine klangliche Unterschiede zwischen verschiedenen Tasten, wie zum Beispiel "1", "2" oder "Enter", genau zu erkennen und zu unterscheiden.
-
-(Optional) Darüber hinaus ermöglicht es das Projekt, Bereiche auf der Tastatur, wie den Zahlenblock oder die linke und rechte Tastaturhälfte, zu identifizieren.
+In diesem Projekt wird die Grenze der Künstlichen Intelligenz in der Erkennung von Tastaturanschlägen auf Basis ihres Klangprofils ausgelotet. Mit dem Einsatz fortschrittlicher Technologien wie TensorFlow-Keras für das Training tiefer neuronaler Netzwerke wird beabsichtigt, ein hochentwickeltes Modell zu kreieren, das fähig ist, selbst minimale akustische Differenzen zwischen verschiedenen Tastenanschlägen präzise zu identifizieren. Das Vorhaben konzentriert sich auf die Entwicklung eines leistungsfähigen Systems, das die nuancierten Unterschiede im Klang von Tasten wie "1", "2", oder "Enter" genau unterscheiden kann, um die Machbarkeit und Effektivität der KI-gesteuerten Erkennung von Tastaturanschlägen zu demonstrieren.
 
 ## Aufzeichnung
 
