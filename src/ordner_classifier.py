@@ -6,8 +6,8 @@ def create_directory(directory_path):
         os.makedirs(directory_path)
 
 def main():
-    source_path = "./Data/flur_hdm/"
-    target_path = "./classes_lw/"
+    source_path = "./Data/lernwelt2/"
+    target_path = "./classes_2/"
     classes = os.listdir(source_path)
     for file in classes:
         taste = file.split("_")[0]
